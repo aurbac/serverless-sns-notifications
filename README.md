@@ -54,7 +54,7 @@ Once the serverless project is deployed, copy the endpoint POST to test.
 
 ## Testing
 
-Use (Postman)[https://www.getpostman.com/] to test your endpoint post and pass the following body json including a mobile number with area code.
+Use [Postman](https://www.getpostman.com/) to test your endpoint post and pass the following body json including a mobile number with area code.
 
 ``` json
 { "sms" : [ { "subject" : "Test", "message" : "This is a message!", "number": "5211234567890" }] }
