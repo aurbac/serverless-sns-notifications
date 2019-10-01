@@ -48,7 +48,7 @@ Replace your **serverless.yml** with the contents of the file [serverless.yml](s
 serverless deploy
 ```
 
-Once the serverless project is deployed, copy the endpoint post to test.
+Once the serverless project is deployed, copy the endpoint POST to test.
 
 ![serverless-deploy](images/serverless-deploy.png)
 
