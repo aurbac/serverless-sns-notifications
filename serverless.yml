@@ -1,0 +1,19 @@
+service: serverless-sns-notifications
+
+provider:
+  name: aws
+  runtime: python2.7
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - sns:Publish
+      Resource: "*"
+
+functions:
+  sendMessage:
+    handler: handler.sendMessages
+    timeout: 30
+    events:
+      - http:
+          path: send-messages
+          method: post
